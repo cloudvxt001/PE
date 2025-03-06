@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Management System</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/navBar.css">
+  <link rel="icon" type="image/png" href="image/Student.png">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="image/logo-team.png" width="40px" align="center" alt=""> Student Management
+      </a>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" id="searchNavbar" placeholder="Search..." />
+      <button id="searchBtn"><i class="fa fa-search"></i></button>
+    </div>
+
+    <!-- Menu Items -->
+    <ul class="nav-links">
+      <li class="dropdown">
+        <a href="#">Home Student <i class="fa fa-caret-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="index.html">Student Name</a></li>
+          <li><a href="page/result.html">Student Results</a></li>
+          <li><a href="#">Other</a></li>
+        </ul>
+      </li>
+      <li><a href="page/about_us.html">About Us</a></li>
+      <li><a href="page/contact_us.html">Contact Us</a></li>
+      <li><a href="page/login.html">
+        <img src="image/programmer.png" align="center" width="40px"> Only Admin
+      </a></li>
+    </ul>
+
+    <!-- Mobile Menu Button -->
+    <button class="menu-toggle"><i class="fa fa-bars"></i></button>
+  </nav>
+
+  <section class="courses">
+    <h2>My Courses</h2>
+      <a href="page/result.html"><div class="course-grid" > 
+        <div class="course-card"  data-aos="fade-right"
+                                  data-aos-offset="500"
+                                  data-aos-easing="ease-in-sine"
+                                  data-aos-duration="1500"
+                                  data-aos-delay="500">
+            <img src="image/reault.png" alt="Course" >
+            <h3>Student Results</h3>
+            <p>90% complete</p>
+        </div></a>
+        <a href="page/surveys.html"><div class="course-card"  data-aos="fade-up"
+                                                              data-aos-anchor-placement="bottom-bottom"
+                                                              data-aos-duration="1500"
+                                                              data-aos-delay="500">
+            <img src="image/Survey.jpg" alt="Course">
+            <h3>Survey</h3>
+            <p>30% complete</p>
+        </div></a>
+        <a href="page/about_us.html"><div class="course-card" data-aos="fade-left"
+                                    data-aos-anchor="#example-anchor"
+                                    data-aos-offset="500"
+                                    data-aos-duration="1500"
+                                    data-aos-delay="500">
+            <img src="image/bg-team.png" alt="Course">
+            <h3>Our teams</h3>
+            <p>0% complete</p>
+        </div></a>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="js/script.js"></script>
+  <script src="js/navBar.js"></script>
+</body>
+</html>

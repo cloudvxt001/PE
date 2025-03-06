@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Results</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/navBar.css">
+  <link rel="stylesheet" href="../css/btn.css">
+  <link rel="stylesheet" href="../css/sort.css">
+  <link rel="icon" type="image/png" href="../image/Student.png">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="../index.html">
+        <img src="../image/logo-team.png" width="40px" align="center" alt=""> Student Management</a>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" id="searchInput" pplaceholder="Search" />
+      <button id="searchBtn"><i class="fa fa-search"></i></button>
+    </div>
+
+    <!-- Menu Items -->
+    <ul class="nav-links">
+      <li class="dropdown">
+        <a href="#">Home Student <i class="fa fa-caret-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="../index.html">Student Name</a></li>
+          <li><a href="../page/result.html">Student Results</a></li>
+          <li><a href="#">Other</a></li>
+        </ul>
+      </li>
+      <li><a href="../page/about_us.html">About Us</a></li>
+      <li><a href="../page/contact_us.html">Contact Us</a></li>
+      <li><a href="../page/login.html">
+        <img src="../image/programmer.png" align="center" width="40px"> Only Admin</a></li>
+    </ul>
+    <!-- Mobile Menu Button -->
+    <button class="menu-toggle"><i class="fa fa-bars"></i></button>
+  </nav>
+  <div class="container">
+    <h2>លទ្ធផលសិស្ស</h2>
+    <h2>Student Results</h2>
+    <table id="resultsTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name (Khmer)</th>
+          <th>Name (English)</th>
+          <th>Gender</th>
+          <th>Date of Birth</th>
+          <th>C A/C</th>
+          <th>C#</th>
+          <th>DATA</th>
+          <th>DSA I</th>
+          <th>GD III</th>
+          <th>NET I</th>
+          <th>SP I</th>
+          <th>UX/UI</th>
+          <th>WD II</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Rows populated by JavaScript -->
+      </tbody>
+    </table>
+  </div>
+  
+  <div class="btnLeave">
+    <button class="Btn" onclick="goBack()">
+      <div class="sign"><svg viewBox="0 0 512 512"><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path></svg></div>
+      <div class="text">Leave</div>
+    </button>
+  </div>
+  <script src="../js/results.js"></script>
+  <script src="../js/navBar.js"></script>
+  <script src="../js/script.js"></script>
+  <script>
+    function sort(type) {
+        alert("Sorting by: " + type);
+    }
+</script>
+</body>
+</html>

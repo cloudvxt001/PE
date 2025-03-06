@@ -1,0 +1,438 @@
+@font-face {
+    font-family: Battambang;
+    font-family: Moul;
+    src: url("font/KhmerOSBattambang-Regular.ttf");
+    src: url("font/KhmerMuol.ttf");
+  }
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: "Battambang", sans-serif;
+    
+  }
+  
+  body {
+    color: #212529;
+    /* line-height: 1.6; */
+    position: relative;
+    display: block;
+    background: url('../image/bg.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+   
+  }
+  a {
+    text-decoration: none;
+  }
+  /* Container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    justify-content: center;
+    backdrop-filter: blur(8px);
+    filter: drop-shadow(2px 2px 20px rgba(0, 0, 0, 0.834));
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header */
+  h1 {
+    text-align: center;
+    font-size: 1.49rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-family: "Moul", sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    color: #ffffff;
+    filter: drop-shadow(2px 2px 20px rgba(0, 0, 0, 0.834));
+    margin-bottom: 10px;
+  }
+
+  h3{
+    color: #ffffff;
+  }
+  
+  /* Form Styles */
+  .form-container {
+    backdrop-filter: blur(8px);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+  }
+  
+  .form-container input,
+  .form-container select,
+  .form-container button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .form-container input:focus,
+  .form-container select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+  }
+  
+  /* From Uiverse.io by cssbuttons-io */ 
+.saveBtn[type="submit"] {
+  --glow-color: rgb(217, 176, 255);
+  --glow-color: rgb(217, 176, 255);
+  --glow-spread-color: rgba(191, 123, 255, 0.781);
+  --enhanced-glow-color: rgb(231, 206, 255);
+  --btn-color: rgb(100, 61, 136);
+  border: .25em solid var(--glow-color);
+  padding: 1em 3em;
+  color: var(--glow-color);
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 1em .25em var(--glow-color),
+          0 0 4em 1em var(--glow-spread-color),
+          inset 0 0 .75em .25em var(--glow-color);
+  text-shadow: 0 0 .5em var(--glow-color);
+  position: relative;
+  transition: all 0.3s;
+}
+
+.saveBtn[type="submit"]::after {
+ pointer-events: none;
+ content: "";
+ position: absolute;
+ top: 120%;
+ left: 0;
+ height: 100%;
+ width: 100%;
+ background-color: var(--glow-spread-color);
+ filter: blur(2em);
+ opacity: .7;
+ transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+.saveBtn[type="submit"]:hover {
+ color: var(--btn-color);
+ background-color: var(--glow-color);
+ box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 2em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+}
+
+.saveBtn[type="submit"] :active {
+ box-shadow: 0 0 0.6em .25em var(--glow-color),
+        0 0 2.5em 2em var(--glow-spread-color),
+        inset 0 0 .5em .25em var(--glow-color);
+}
+
+/* From Uiverse.io by mrhyddenn */ 
+.saveBtn {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid rgb(61, 106, 255);
+    font-size: 10px;
+    /* text-transform: uppercase; */
+    font-weight: 50;
+    /* letter-spacing: 2px; */
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+  
+.saveBtn:hover {
+    background: rgb(61, 106, 255);
+    box-shadow: 0 0 30px 5px rgba(142, 139, 139, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  
+.saveBtn:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+  }
+  
+.saveBtn::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+  }
+  
+  @keyframes sh02 {
+    from {
+      opacity: 0;
+      left: 0%;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      left: 100%;
+    }
+  }
+  
+.saveBtn:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+  }
+  
+
+  /* Scores Grid */
+  .scores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+  
+  /* Controls Section */
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .controls input,
+  .controls button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+  }
+  
+  .controls button {
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .controls button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  /* Toggle Name Button */
+  #toggle-names {
+    background-color: #6c757d;
+  }
+  
+  #toggle-names:hover {
+    background-color: #5a6268;
+  }
+  
+  /* Table Styles */
+  .table-container {
+    overflow-x: auto;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: none;
+    color: #ffffff;
+    
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  table th,
+  table td {
+    padding: 5px;
+
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+  }
+  
+  table th {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: none;
+  }
+  
+  table tr:hover {
+    background-color: #ffffff23;
+    transition: background-color 0.3s ease;
+  }
+  
+  table td {
+    font-size: 0.9rem;
+  }
+  
+  /* Action Buttons in Table */
+  table td span {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+    background: none;
+    color: white;
+    align-items: center;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  table td button:hover {
+    background: none;
+    transform: translateY(-2px);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .controls {
+      flex-direction: column;
+    }
+  
+    .scores {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  
+    .form-container {
+      padding: 15px;
+    }
+  }
+
+  /* Hero Section */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../image/hero-bg.jpg') no-repeat center center/cover;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .hero p {
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  /* Courses Section */
+  .courses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+  }
+
+  .course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    filter: drop-shadow(2px 2px 20px rgba(0, 0, 0, 0.834));
+  }
+
+  .course-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .course-card img {
+    width: 100%;
+    height: 200px;
+    filter: blur(4px);
+    object-fit: cover;
+  }
+
+  .course-card-content {
+    padding: 20px;
+  }
+
+  .course-card h3 {
+    font-size: 1.5rem;
+    color: #c39f0f;
+    padding: 0px 10px;
+    margin-bottom: 10px;
+  }
+
+  .course-card p {
+    font-size: 1rem;
+    color: #6c757d;
+    padding: 0px 10px;
+    margin-bottom: 20px;
+  }
+
+  .course-card button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .course-card button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+  

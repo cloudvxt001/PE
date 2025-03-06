@@ -1,0 +1,64 @@
+.img {
+    width: 100%;
+    border-radius: 10px;
+    
+}
+a{
+    text-decoration: none;
+    color: rgb(243, 0, 0);
+}
+.contact-container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px;
+    background: none;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.contact-member {
+    padding: 20px;
+    background: none;
+    backdrop-filter: blur(8px);
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.459));
+    border-radius: 10px;
+    transition: transform 0.3s;
+    animation: float 4s ease-in-out infinite;
+}
+.contact-member img {
+object-fit: cover;
+}
+.contact-member:hover {
+    transform: scale(1.05);
+}
+.social-icons a {
+    margin: 5px;
+    color: #ffffff;
+    font-size: 18px;
+}
+.contact-form-container {
+    margin-top: 20px;
+    padding: 20px;
+    background: none;
+    border-radius: 10px;
+}
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    background: #1100ff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}

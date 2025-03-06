@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Admin</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="icon" type="image/png" href="../image/login.png" />
+  </head>
+  <body>
+    <div class="login wrap">
+      <form class="login-form" onsubmit="return validateForm(event)">
+        <div class="h1">Login</div>
+        <input
+          placeholder="Email"
+          id="email"
+          name="email"
+          type="text"
+          required
+        />
+        <input type="password" id="password" placeholder="Password" required />
+        <input value="Login" class="btn" type="submit" id="error-message" />
+        <p class="error-message" id="error-message"></p>
+        <p class="register">Don't have an account? <a href="../page/sign_up.html">Sign Up</a></p>
+      </form>
+    </div>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="../js/login.js"></script>
+  </body>
+</html>

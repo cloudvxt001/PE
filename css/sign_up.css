@@ -1,0 +1,106 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('../image/bg.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    }
+label {
+    color: #fff;
+}
+    .container {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        padding: 2.5rem;
+        width: 100%;
+        max-width: 400px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        animation: slideIn 0.8s ease-in-out;
+        }
+    
+        @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        }
+    
+        h2 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 600;
+        }
+    
+        .input-group {
+        position: relative;
+        margin-bottom: 1.5rem;
+        }
+    
+        .input-group input {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        font-size: 16px;
+        background: rgba(255, 255, 255, 0.2);
+        color: #fff;
+        transition: all 0.3s ease;
+        }
+    
+        .input-group input::placeholder {
+        
+            top: 0;
+            font-size: 12px;
+            color: #6a11cb;
+            background: #fff;
+            padding: 0 5px;
+            }
+    
+            button {
+            width: 100%;
+            padding: 10px;
+            background: #2575fc;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            }
+    
+            button:hover {
+            background: #ffffff00;
+            color: #377ffa;
+            border: 1px solid #2575fc;
+            }
+    
+            p {
+            text-align: center;
+            margin-top: 1rem;
+            color: #bab0b0;
+            }
+    
+            p a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            }
+    
+            p a:hover {
+            color: #2575fc;
+            }    

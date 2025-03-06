@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/navBar.css">
+    <link rel="stylesheet" href="../css/about_us.css">
+    <link rel="icon" type="image/png" href="../image/info.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <a href="../index.html">
+            <img src="../image/logo-team.png" width="40px" align="center" alt=""> Student Management
+          </a>
+        </div>
+    
+        <!-- Search Bar -->
+        <div class="search-bar">
+          <input type="text" id="searchNavbar" placeholder="Search..." />
+          <button id="searchBtn"><i class="fa fa-search"></i></button>
+        </div>
+    
+        <!-- Menu Items -->
+        <ul class="nav-links">
+          <li class="dropdown">
+            <a href="#">Home Student <i class="fa fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="../index.html">Student Name</a></li>
+              <li><a href="../page/result.html">Student Results</a></li>
+              <li><a href="#">Other</a></li>
+            </ul>
+          </li>
+          <li><a href="../page/about_us.html">About Us</a></li>
+          <li><a href="../page/contact_us.html">Contact Us</a></li>
+          <li><a href="../page/login.html">
+            <img src="../image/programmer.png" align="center" width="40px"> Only Admin
+          </a></li>
+        </ul>
+    
+        <!-- Mobile Menu Button -->
+        <button class="menu-toggle"><i class="fa fa-bars"></i></button>
+    </nav>
+
+    <div class="about-us">
+        <h1 class="title">Meet Our Team</h1>
+        <div class="team-members">
+          <!-- Team Member 1 -->
+          <div class="team-member" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">
+            <div class="member-image">
+              <img src="../image/Profile/vit.png" alt="Member 1">
+            </div>
+            <h2 class="member-name">Devit Nang</h2>
+            <p class="member-role">Front-end Developer</p>
+            <p class="member-description">Devit specializes in creating responsive and user-friendly interfaces using modern web technologies.</p>
+          </div>
+    
+          <!-- Team Member 2 -->
+          <div class="team-member" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="500">
+            <div class="member-image">
+              <img src="../image/Profile/bin.png" alt="Member 2">
+            </div>
+            <h2 class="member-name">Yongbin Meng</h2>
+            <p class="member-role">UX/UI Designer</p>
+            <p class="member-description">Yongbin is passionate about designing intuitive and visually appealing user experiences that delight users.</p>
+          </div>
+    
+          <!-- Team Member 3 -->
+          <div class="team-member" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">
+            <div class="member-image">
+              <img src="../image/Profile/sal.png" alt="Member 3">
+            </div>
+            <h2 class="member-name">Sokvisal Aun</h2>
+            <p class="member-role">Back-end Developer</p>
+            <p class="member-description">Sal is the backbone of our systems, ensuring robust and scalable server-side solutions.</p>
+          </div>
+    
+          <!-- Team Member 4 -->
+          <div class="team-member" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="500">
+            <div class="member-image" >
+              <img src="../image/Profile/ngorn.PNG" alt="Member 4">
+            </div>
+            <h2 class="member-name">Khimngorn Taing</h2>
+            <p class="member-role">Project Manager</p>
+            <p class="member-description">Khimngorn keeps everything on track, managing timelines and ensuring seamless collaboration across teams.</p>
+          </div>
+        </div>
+    </div>
+
+    <script>
+      AOS.init();
+    </script>
+    <script src="../js/results.js"></script>
+    <script src="../js/navBar.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

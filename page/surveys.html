@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Survey Form</title>
+    <link rel="stylesheet" href="../css/survey.css">
+    <link rel="icon" type="image/png" href="../image/surveyor.png">
+    <script src="survey.js" defer></script>
+    <style>
+        
+    </style>
+</head>
+<body>    
+    <!-- From Uiverse.io by xopc333 --> 
+    <a href="../index.html"><button class="button">
+    <div class="button-box">
+        <span class="button-elem">
+        <svg viewBox="0 0 46 40" xmlns="http://www.w3.org/2000/svg">
+            <path
+            d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"
+            ></path>
+        </svg>
+        </span>
+        <span class="button-elem">
+        <svg viewBox="0 0 46 40">
+            <path
+            d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"
+            ></path>
+        </svg>
+        </span>
+    </div>
+    </button></a>
+
+    <div class="container">
+        <h2>Student Survey Form</h2>
+        <p>Help us improve by sharing your feedback!</p>
+
+        <form id="surveyForm">
+            <!-- Name Input -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <!-- Email Input -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <!-- Year Selection -->
+            <label for="year">Year of Study:</label>
+            <select id="year">
+                <option value="1">1st Year</option>
+                <option value="2">2nd Year</option>
+                <option value="3">3rd Year</option>
+                <option value="4">4th Year</option>
+            </select>
+
+            <!-- Satisfaction Rating -->
+            <label>How satisfied are you with the system?</label>
+            <div class="radio-group">
+                <input type="radio" name="satisfaction" id="very-satisfied" value="Very Satisfied">
+                <label for="very-satisfied">Very Satisfied</label>
+                
+                <input type="radio" name="satisfaction" id="satisfied" value="Satisfied">
+                <label for="satisfied">Satisfied</label>
+                
+                <input type="radio" name="satisfaction" id="neutral" value="Neutral">
+                <label for="neutral">Neutral</label>
+
+                <input type="radio" name="satisfaction" id="dissatisfied" value="Dissatisfied">
+                <label for="dissatisfied">Dissatisfied</label>
+                
+                <input type="radio" name="satisfaction" id="very-dissatisfied" value="Very Dissatisfied">
+                <label for="very-dissatisfied">Very Dissatisfied</label>
+            </div>
+
+            <!-- Feedback -->
+            <label for="feedback">Any additional feedback?</label>
+            <textarea id="feedback" placeholder="Write your feedback here..."></textarea>
+
+            <!-- Terms Checkbox -->
+            <div class="checkbox-group">
+                <input type="checkbox" id="agree" required>
+                <label for="agree">I agree to submit my responses.</label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Survey</button>
+        </form>
+
+        <p id="successMessage" class="hidden">Thank you for your feedback! 🎉</p>
+    </div>
+    <script src="../js/survey.js"></script>
+</body>
+</html>

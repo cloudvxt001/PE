@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/employee.css">
+    <link rel="stylesheet" href="../css/tabs.css">
+    <link rel="icon" type="image/png" href="../image/admin.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Employees</title>
+
+</head>
+<body>
+    <div class="tabs" >
+        <a href="../page/allInput.html" class="tab" data-tab="all">ALL</a>
+        <a href="../page/employee.html" class="tab active"  data-tab="employee">EMPLOYEES</a>
+        <a href="../page/admin.html" class="tab" data-tab="Student">STUDENTS</a>
+        <a href="#" class="tab" data-tab="other">OTHER</a>
+        <div class="underline"></div>
+    </div>
+
+    <div class="container-em">
+        <h1>Employee Management</h1>
+        <input type="text" id="nameInput" placeholder="Name">
+        <input type="text" id="positionInput" placeholder="Position">
+        <input type="text" id="officeInput" placeholder="Office">
+        <input type="date" id="dobInput" placeholder="Date of Birth" onchange="calculateAge()">
+        <input type="text" id="ageInput" placeholder="Age" readonly>
+        <button onclick="addRow()" class="button1">Add Data</button>
+        <p id="errorMsg" style="color: red; display: none;">Please fill all fields</p>
+        <input type="text" id="searchInput" placeholder="Search..." oninput="searchTable()">
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th onclick="sortTable(0)">
+                        Name <span class="sort-icon">&#8597;</span>
+                    </th>
+                    <th onclick="sortTable(1)">
+                        Position <span class="sort-icon">&#8597;</span>
+                    </th>
+                    <th onclick="sortTable(2)">
+                        Office <span class="sort-icon">&#8597;</span>
+                    </th>
+                    <th onclick="sortTable(3)">
+                        Age <span class="sort-icon">&#8597;</span>
+                    </th>
+                    <th onclick="sortTable(4)">
+                        Start Date <span class="sort-icon">&#8597;</span>
+                    </th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <-- Data will be added here --> 
+            </tbody>
+        </table>
+        <div class="pagination" id="pagination"></div>
+    </div>
+    
+    <script src="../js/employee.js"></script>
+    <script src="../js/tabs.js"></script>
+</body>
+</html>
